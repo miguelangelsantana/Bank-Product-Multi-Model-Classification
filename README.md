@@ -58,6 +58,16 @@ The dataset includes the following client, campaign, social, economic and other 
 - Addressing Outlier Data (Age)
 - Using Multiple Models | Selecting Top Features
 
+## Exploratory Data Analysis | Client Features
+**Visualizing Age**
+![graph2](./age.png)
+
+**Visualizing Job Type**
+![graph3](./job.png)
+
+**Visualizing Education Level**
+![graph4](./education.png)
+
 ## Results | Conclusion
 
 The dataset offered various consumer trends and illustrated multiple areas of opportunity. In most cases, the features that related to these constants represented both; highest number of subscribers and highest number of non-subscribers. This leads us to believe that consistency and performance metrics are not followed as the volume of work increases resulting in a natural increase of total subscribers but an exponential increase in consumers who decline term deposit products. Selected customer and bank features will be evaluated in the business recommendations below. 
