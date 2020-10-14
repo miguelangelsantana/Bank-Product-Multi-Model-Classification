@@ -48,13 +48,9 @@ The dataset includes the following client, campaign, social, economic and other 
 **Output/Target**
 * y (has the client subscribed a term deposit?)
 
-## Methods
-**OSEMN Framework**
-* Obtain
-* Scrub
-* Explore
-* Model
-* Interpret
+## Process
+![graph1](./OSEMN.png)
+**The OSEMN Framework was used to analyze the data**
 
 **Choices**
 - Renaming Target Variable
@@ -62,37 +58,32 @@ The dataset includes the following client, campaign, social, economic and other 
 - Addressing Outlier Data (Age)
 - Using Multiple Models | Selecting Top Features
 
-## Results
+## Results | Conclusion
 
-The top model was Catboost. Synthetic Minority Over-sampling Technique (SMOTE) was used to balance the classes in our dataset but did not increase the performance of our models. While the total performance did not increase, the hierarchy of performance udpated to show Random Forest as a close second place performer. 
+The dataset offered various consumer trends and illustrated multiple areas of opportunity. In most cases, the features that related to these constants represented both; highest number of subscribers and highest number of non-subscribers. This leads us to believe that consistency and performance metrics are not followed as the volume of work increases resulting in a natural increase of total subscribers but an exponential increase in consumers who decline term deposit products. Selected customer and bank features will be evaluated in the business recommendations below. 
 
-**There are 23 total items appearing in both classifier feature lists with 3 important features showing up in the top 5 of both lists. Those significant features are:
-The most important features in both lists are**:
-* **Number of employees | quarterly indicator (nremployed)**
-* **Consumer Price Index | monthly indicator (conspriceidx)**
-* **Age**
+<div class="alert alert-block alert-info">
 
-#### Subscriber Term Deposits X Number of Employees
-![graph1](./numberees.png)
-> Term Deposits are highest when the average number of employees is 5099.1, 5228.1 and 5076.2 respectively. 
+## Business Recommendations
 
-#### Subscriber Term Deposits X Consumer Price Index
-![graph2](./priceindex.png)
-> Term Deposits are highest when the consumer price index is 92.893, 93.075 and 93.918 respectively.
+1) Consumers between the ages of 30 and 40 make up the largest amount of term deposit subscribers but also reflect the largest amount of non-subscribing customers. The age group with the smallest gap between subscribing and non-subscribing customers includes customers ages 17 to 25. Construct and apply similarly structured marketing, outreach and advertising techniques to the customer age segment 30 to 40 in order to convert additional non-subscribing customers. 
 
-#### Subscriber Term Deposits X Consumer Price Index
-![graph3](./age.png)
-> Term Deposits are highest when client age is between 28 and 38 years old.
+2) The gap between number of subscribing and non-subscribing customers begins to grow significantly once the number of quarterly employed employees goes over 5076. While the number of subscribed term deposits does continue to grow the level of productivity declines dramatically. Review bank productivity guidelines and drive performance per employee when employee levels go over 5076. 
 
-## Recommendations:
+3) When considering the number of times a consumer has been contacted for the current campaign – there is an obvious decline in the number of subscriber term deposits as the number of contacts per customer increase. Deploy an A team (high performers) to handle customer outreach during the first three contacts to increase the chance of conversion. 
 
-More of your own text here
+4) The 'days since last contact' data show an abundance of non-subscribing and subscribing consumers in the '999' or 'has not been contacted' category. Deploy a B team to (high performers) to field incoming marketing calls that arrive from numbers that are not registered in the bank's database. In addition, consider methods of dividing customers into 'new' and 'existing' during day-to-day operations.  High performing team members should be deployed to address new bank customers.  
 
+</div> 
 
-## Limitations & Next Steps
+## Limitations
 
-More of your own text here
+The dataset and business insights are limited to customers who specifically cite their job type, marital status and education level when registering as a bank customer. Additionally, the models and features reflect clients that are between 17 and 69 years of age. 
 
+## Future Work
+In order to more accurately define the boundaries of our features it is important to understand what customs and cultural influences are tied to this dataset (Portuguese banking info). For example: knowing the average level of education, the geographic locations of client residences and information on financial markets in this region may alter the way we perceive these variables.
+
+Additionally, the dataset illustrates that the vast majority of subscribing consumers enroll in bank products when they are not contacted by telemarketers. It would be helpful to review additional data on these consumers in order to evaluate different means of product conversion (such as social media, the Internet, day-to-day walk-ins, etc.)
 
 ### For further information
 Please review the narrative of our analysis in [our jupyter notebook](./student.ipynb) or review our [presentation](./powerpoint.pdf)
