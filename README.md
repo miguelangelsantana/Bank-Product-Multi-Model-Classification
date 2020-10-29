@@ -1,11 +1,11 @@
 # Banking Features & Subscriber Term Deposits  
 ## Predicting Drivers of Subscriber Term Deposits
 
-**Authors**: Miguel Santana
-**Student Pace**: Full Time
-**Project Review Date/Time**: 10/14/2020, 12-12:45pm
-**Instructor name**: James Irving
-**Blog post URL**: TBA
+* **Author**: Miguel Santana
+* **Student Pace**: Full Time
+* **Project Review Date/Time**: 10/14/2020, 12-12:45pm
+* **Instructor name**: James Irving
+* **Blog post URL**: TBA
 
 The contents of this repository detail an analysis of client, campaign, social, economic and misc. features provided by a Portuguese bank. This analysis is detailed in hopes of making the work accessible and replicable.
 
