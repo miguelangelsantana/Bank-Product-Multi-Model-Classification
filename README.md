@@ -2,15 +2,11 @@
 ## Predicting Drivers of Subscriber Term Deposits
 
 * **Author**: Miguel Santana
-* **Student Pace**: Full Time
-* **Project Review Date/Time**: 10/14/2020, 12-12:45pm
-* **Instructor name**: James Irving
-* **Blog post URL**: TBA
+* **Review Date/Time**: 10/14/2020, 12-12:45pm
 
-The contents of this repository detail an analysis of client, campaign, social, economic and misc. features provided by a Portuguese bank. This analysis is detailed in hopes of making the work accessible and replicable.
+The contents of this repository detail an analysis of client, campaign, social, economic and additional features provided by a Portuguese bank with regard to customer term deposits. The analysis will provide insight into product performance through classification models and offer insight into driving factors for business development. Analysis, business recommendations, limitations and future work are provided below. 
 
-
-### Business problem:
+## Business problem:
 
 A Portuguese financial institution provided data resulting from various direct telemarketing campaigns (Moro et al., 2014). The Portuguese bank looks to analyze the various client, campaign, social, economic and miscellaneous features to identify their significance as they relate to subscriber term deposits. 
 
@@ -48,31 +44,73 @@ The dataset includes the following client, campaign, social, economic and other 
 **Output/Target**
 * y (has the client subscribed a term deposit?)
 
-## Process
+### Framework
+
 ![graph1](./OSEMN.png)
+
 **The OSEMN Framework was used to analyze the data**
 
+## Data Cleaning/Scrubbing 
+
 **Choices**
-- Renaming Target Variable
-- Dropping "Unknown" Variables in Client Features
-- Addressing Outlier Data (Age)
-- Using Multiple Models | Selecting Top Features
+
+* Renaming Target Variable
+* Dropping "Unknown" Variables in Client Features
+* Addressing Outlier Data (Age)
+* Using Multiple Models | Selecting Top Features
 
 ## Exploratory Data Analysis | Client Features
-**Visualizing Age**
-![graph2](./age.png)
 
-**Visualizing Job Type**
+### Client Features
+
+**Client Education Level**
+
+![graph2](./education.png)
+
+**Client Occupations**
+
 ![graph3](./job.png)
 
-**Visualizing Education Level**
-![graph4](./education.png)
+### Bank Features
+
+**Days Since Customer Last Contacted**
+
+![graph4](./daysslastcontact.png)
+
+**Number Of Contacts This Campaign**
+
+![graph5](./numbercontactc.png)
+
+## Model
+
+**Eight classification models were performed. The models included a gradient boosting classifier, adaboost, k-nearest neighbors, random forest, decision tree, support vector machine, logistic regression and guassian naive bayes classifier.**
+
+**Multi-Model Accuracy Scores**
+
+![graph6](./modelscores.png)
+
+**Gradient Boosting Classifier**
+
+![graph7](./gbcresults.png)
 
 ## Results | Conclusion
 
 The dataset offered various consumer trends and illustrated multiple areas of opportunity. In most cases, the features that related to these constants represented both; highest number of subscribers and highest number of non-subscribers. This leads us to believe that consistency and performance metrics are not followed as the volume of work increases resulting in a natural increase of total subscribers but an exponential increase in consumers who decline term deposit products. Selected customer and bank features will be evaluated in the business recommendations below. 
 
-<div class="alert alert-block alert-info">
+### Top Features
+
+Top features were selected using the overlapping important features in the top two performing models. The top two models were the Gradient Boosting Classifier and AdaBoost.
+
+### Selected Features
+
+* Age
+* Number of Employees (Quarterly)
+* Days Since Last Contact
+* Number of Contacts (This Campaign)
+
+**Visualizing Top Features**
+
+![graph8](./resultsvisuals.png)
 
 ## Business Recommendations
 
@@ -84,8 +122,6 @@ The dataset offered various consumer trends and illustrated multiple areas of op
 
 4) The 'days since last contact' data show an abundance of non-subscribing and subscribing consumers in the '999' or 'has not been contacted' category. Deploy a B team to (high performers) to field incoming marketing calls that arrive from numbers that are not registered in the bank's database. In addition, consider methods of dividing customers into 'new' and 'existing' during day-to-day operations.  High performing team members should be deployed to address new bank customers.  
 
-</div> 
-
 ## Limitations
 
 The dataset and business insights are limited to customers who specifically cite their job type, marital status and education level when registering as a bank customer. Additionally, the models and features reflect clients that are between 17 and 69 years of age. 
@@ -96,6 +132,6 @@ In order to more accurately define the boundaries of our features it is importan
 Additionally, the dataset illustrates that the vast majority of subscribing consumers enroll in bank products when they are not contacted by telemarketers. It would be helpful to review additional data on these consumers in order to evaluate different means of product conversion (such as social media, the Internet, day-to-day walk-ins, etc.)
 
 ### For further information
-Please review the narrative of our analysis in [our jupyter notebook](./student.ipynb) or review our [presentation](./powerpoint.pdf)
+Please review the narrative of our analysis in [our jupyter notebook](./BankTermDeposit.ipynb) or review our [presentation](./powerpoint.pdf)
 
 For any additional questions, please contact **Miguel Santana at msantana269@gmail.com**)
