@@ -2,7 +2,6 @@
 ## Predicting Drivers of Subscriber Term Deposits
 
 * **Author**: Miguel Santana
-* **Review Date/Time**: 10/14/2020, 12-12:45pm
 
 The contents of this repository detail an analysis of client, campaign, social, economic and additional features provided by a Portuguese bank with regard to customer term deposits. The analysis will provide insight into product performance through classification models and offer insight into driving factors for business development. Analysis, business recommendations, limitations and future work are provided below. 
 
@@ -46,7 +45,7 @@ The dataset includes the following client, campaign, social, economic and other 
 
 ### Framework
 
-![graph1](./OSEMN.png)
+![graph1](/images/OSEMN.png)
 
 **The OSEMN Framework was used to analyze the data**
 
@@ -65,21 +64,21 @@ The dataset includes the following client, campaign, social, economic and other 
 
 **Client Education Level**
 
-![graph2](./education.png)
+![graph2](/images/education.png)
 
 **Client Occupations**
 
-![graph3](./job.png)
+![graph3](/images/job.png)
 
 ### Bank Features
 
 **Days Since Customer Last Contacted**
 
-![graph4](./daysslastcontact.png)
+![graph4](/images/daysslastcontact.png)
 
 **Number Of Contacts This Campaign**
 
-![graph5](./numbercontactc.png)
+![graph5](/images/numbercontactc.png)
 
 ## Model
 
@@ -87,11 +86,11 @@ The dataset includes the following client, campaign, social, economic and other 
 
 **Multi-Model Accuracy Scores**
 
-![graph6](./modelscores.png)
+![graph6](/images/modelscores.png)
 
 **Gradient Boosting Classifier**
 
-![graph7](./gbcresults.png)
+![graph7](/images/gbcresults.png)
 
 ## Results | Conclusion
 
@@ -110,7 +109,7 @@ Top features were selected using the overlapping important features in the top t
 
 **Visualizing Top Features**
 
-![graph8](./resultsvisuals.png)
+![graph8](/images/resultsvisuals.png)
 
 ## Business Recommendations
 
@@ -132,6 +131,19 @@ In order to more accurately define the boundaries of our features it is importan
 Additionally, the dataset illustrates that the vast majority of subscribing consumers enroll in bank products when they are not contacted by telemarketers. It would be helpful to review additional data on these consumers in order to evaluate different means of product conversion (such as social media, the Internet, day-to-day walk-ins, etc.)
 
 ### For further information
-Please review the narrative of our analysis in [our jupyter notebook](./BankTermDeposit.ipynb) or review our [presentation](./powerpoint.pdf)
+Please review the narrative of our analysis in [our jupyter notebook](./BankTermDeposit.ipynb) or review our [presentation](/powerpoint/powerpoint.pdf)
 
-For any additional questions, please contact **Miguel Santana at msantana269@gmail.com**)
+For any additional questions, please reach out via email at santana2.miguel@gmail.com, on [LinkedIn](https://www.linkedin.com/in/miguel-angel-santana-ii-mba-51467276/) or on [Twitter.](https://twitter.com/msantana_ds)
+
+
+##### Repository Structure:
+
+```
+
+├── README.md               <- The top-level README for reviewers of this project.
+├── BankTermDeposit.ipynb     <- narrative documentation of analysis in jupyter notebook
+├── presentation.pdf        <- pdf version of project presentation
+
+```
+
+
