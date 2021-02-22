@@ -131,7 +131,7 @@ In order to more accurately define the boundaries of our features it is importan
 Additionally, the dataset illustrates that the vast majority of subscribing consumers enroll in bank products when they are not contacted by telemarketers. It would be helpful to review additional data on these consumers in order to evaluate different means of product conversion (such as social media, the Internet, day-to-day walk-ins, etc.)
 
 ### For further information
-Please review the narrative of our analysis in [our jupyter notebook](./BankTermDeposit.ipynb) or review our [presentation](/powerpoint/powerpoint.pdf)
+Please review the narrative of our analysis in [our jupyter notebook](./jupyter_notebook.ipynb) or review our [presentation](./presentation.pdf)
 
 For any additional questions, please reach out via email at santana2.miguel@gmail.com, on [LinkedIn](https://www.linkedin.com/in/miguel-angel-santana-ii-mba-51467276/) or on [Twitter.](https://twitter.com/msantana_ds)
 
@@ -141,7 +141,7 @@ For any additional questions, please reach out via email at santana2.miguel@gmai
 ```
 
 ├── README.md               <- The top-level README for reviewers of this project.
-├── BankTermDeposit.ipynb     <- narrative documentation of analysis in jupyter notebook
+├── jupyter_notebook.ipynb     <- narrative documentation of analysis in jupyter notebook
 ├── presentation.pdf        <- pdf version of project presentation
 
 ```
