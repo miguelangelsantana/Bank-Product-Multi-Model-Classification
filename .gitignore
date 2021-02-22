@@ -1,9 +1,10 @@
 .DS_Store
 *.ipynb_checkpoints
 *.pytest_cache
+*.csv
 *.pyc
 *__pycache__
-*.csv
 /logs
 /powerpoint
 /project_csv_files
+
